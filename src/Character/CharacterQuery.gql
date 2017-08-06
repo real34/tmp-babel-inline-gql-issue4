@@ -1,7 +1,7 @@
+#import "./CharacterFragment.gql"
+
 query CharacterQuery($id: ID!) {
   character(id: $id) {
-    id
-    name
-    appearsIn
+    ...CharacterFragment
   }
 }

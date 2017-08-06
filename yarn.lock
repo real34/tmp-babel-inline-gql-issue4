@@ -555,9 +555,9 @@ babel-plugin-dynamic-import-node@1.0.2:
     babel-template "^6.24.1"
     babel-types "^6.24.1"
 
-babel-plugin-inline-import-graphql-ast@beta:
-  version "2.0.1-beta.2"
-  resolved "https://registry.yarnpkg.com/babel-plugin-inline-import-graphql-ast/-/babel-plugin-inline-import-graphql-ast-2.0.1-beta.2.tgz#d575914f2276529d2f33960beaa855b2fcdea131"
+babel-plugin-inline-import-graphql-ast@2.0.1-beta.1:
+  version "2.0.1-beta.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-inline-import-graphql-ast/-/babel-plugin-inline-import-graphql-ast-2.0.1-beta.1.tgz#bde60b84c4b9ece77cebb03ba8e6ee8a7eb91594"
   dependencies:
     babylon "^6.17.0"
     graphql "^0.9.6"

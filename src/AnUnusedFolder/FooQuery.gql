@@ -1,10 +1,9 @@
 #import "../Character/CharacterFragment.gql"
 
-query Hero {
+query Foo {
   hero {
     name
     friends {
-      id
       ...CharacterFragment
     }
   }
