@@ -1,0 +1,7 @@
+query CharacterQuery($id: ID!) {
+  character(id: $id) {
+    id
+    name
+    appearsIn
+  }
+}

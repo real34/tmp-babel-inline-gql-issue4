@@ -1,5 +1,6 @@
 import React from 'react';
-import { gql, graphql } from 'react-apollo';
+import graphql from 'react-apollo/graphql';
+import HeroQuery from './HeroQuery.gql';
 
 const Hero = ({ data: { loading, hero }, displayCharacter }) => {
   if (loading) {
@@ -23,18 +24,5 @@ const Hero = ({ data: { loading, hero }, displayCharacter }) => {
     </div>
   );
 };
-
-const HeroQuery = gql`
-  {
-    hero {
-      name
-      friends {
-        id
-        name
-        appearsIn
-      }
-    }
-  }
-`;
 
 export default graphql(HeroQuery)(Hero);

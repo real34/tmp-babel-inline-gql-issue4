@@ -1,5 +1,6 @@
 import React from 'react';
-import { gql, graphql } from 'react-apollo';
+import graphql from 'react-apollo/graphql';
+import CharacterQuery from './CharacterQuery.gql';
 
 const Character = ({ data: { loading, character } }) => {
   if (loading) {
@@ -18,15 +19,5 @@ const Character = ({ data: { loading, character } }) => {
     </div>
   );
 };
-
-const CharacterQuery = gql`
-  query CharacterQuery($id: ID!) {
-    character(id: $id) {
-      id
-      name
-      appearsIn
-    }
-  }
-`;
 
 export default graphql(CharacterQuery)(Character);
