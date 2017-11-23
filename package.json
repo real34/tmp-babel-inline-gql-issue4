@@ -49,8 +49,8 @@
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
-    "babel-plugin-inline-import-graphql-ast": "2.0.1-beta.2",
-    "prettier": "^1.5.3"
+    "babel-plugin-inline-import-graphql-ast": "2.0.3-beta.1",
+    "prettier": "^1.8.2"
   },
   "jest": {
     "collectCoverageFrom": [

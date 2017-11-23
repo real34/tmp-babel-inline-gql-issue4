@@ -1,0 +1,6 @@
+query TopPosts($limit: Int!) {
+  topPosts(limit: $limit) {
+    id
+    title
+  }
+}

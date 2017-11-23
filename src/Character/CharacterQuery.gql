@@ -1,7 +1,0 @@
-#import "./CharacterFragment.gql"
-
-query CharacterQuery($id: ID!) {
-  character(id: $id) {
-    ...CharacterFragment
-  }
-}
